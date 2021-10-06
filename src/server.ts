@@ -7,7 +7,7 @@ const app = express();
 const port = (process.env.PORT || 3000);
 
 app.set('view engine', 'ejs');
-app.set('views','./views');
+app.set('views','./src/views');
 app.use(cors());
 app.use(expressLayouts);
 app.use(express.static('public'));

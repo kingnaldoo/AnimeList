@@ -1,7 +1,6 @@
 {
   "name": "AnimeList",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
