@@ -1,0 +1,92 @@
+main {
+  background-color: var(--color-background);
+  padding: 3vw 10vw;
+}
+
+main div h4 {
+  margin-bottom: 1vw;
+}
+
+main div .card-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+main div .card-list .card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2vw;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.38);
+          box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.38);
+}
+
+main div .card-list .card-item img {
+  width: 100%;
+  height: 80%;
+  border-radius: 2vw;
+  pointer-events: all;
+}
+
+main div .card-list .card-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw;
+  width: 100%;
+  height: 20%;
+}
+
+main div .card-list .card-item .info h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5vw;
+  margin-bottom: 0;
+  width: 90%;
+  padding: 0.5vw;
+}
+
+main div .card-list .card-item .info svg {
+  width: 10%;
+  pointer-events: all;
+}
+
+main div .card-list .card-item .info svg path {
+  pointer-events: none;
+}
+
+main div .card-list .card-item .info svg:hover {
+  cursor: pointer;
+}
+
+main div .card-list .card-item .info .selected {
+  fill: red;
+}
+
+main div .card-list .card-item .info .selected path {
+  stroke: none;
+}
+/*# sourceMappingURL=listing.css.map */
