@@ -1,0 +1,28 @@
+<%- contentFor('style') %>
+<link rel="stylesheet" href="styles/pages/anime.css">
+
+<%- contentFor('body') %>
+<div>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('<%= animeData.banner_image %> ');">
+        <div class="container">
+            <h1 class="display-4"><%= animeData.titles.en %></h1>
+            <ul class="lead">
+                <% for( let index = 0; index < 3; index++ ) { %>
+                    <li><%= animeData.genres[index] %></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+
+    <main class="info">
+        <div class="description">
+            <p><%= animeData.descriptions.en%></p>
+        </div>
+
+        <div class="cover">
+            <img src="<%= animeData.cover_image %>" alt="<%= animeData.titles.en %>">
+        </div>
+    </main>
+</div>
+
+<%- contentFor('scripts') %>
