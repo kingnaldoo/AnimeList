@@ -10,7 +10,7 @@
       "resolveJsonModule": true,
       "allowJs": true,
       "outDir": "./dist",
-      "rootDirs": ["./public", "./src", "./views"],
+      "rootDirs": ["./public", "./src"],
       "removeComments": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
