@@ -7,7 +7,7 @@ input.addEventListener('focus', () => {
 })
 
 input.addEventListener('keyup', () => {
-    const baseURL = ('http://localhost:3000');
+    const baseURL = ('https://ani-list.herokuapp.com');
     menuSearchResults.innerHTML = null;
 
     fetch(`${baseURL}/search-results?title=${input.value}`)
