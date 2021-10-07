@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios');
 
 const api = axios.create({
   baseURL: 'https://api.aniapi.com/v1' 
@@ -9,4 +9,4 @@ api.interceptors.request.use(config => {
     return config;
 });
 
-export default api;
+module.exports = api;

@@ -1,5 +1,5 @@
 document.querySelector('.card-list').addEventListener('click', (e) => {
-    const baseURL = ('https://ani-list.herokuapp.com');
+    const baseURL = ('http://localhost:3000');
     let svgTarget = e.target;
     if(!svgTarget.getAttribute('class')){
         fetch(`${baseURL}/favorites/${svgTarget.getAttribute('itemid')}`, {

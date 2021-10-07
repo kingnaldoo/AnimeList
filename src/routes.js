@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import { AnimeProps, getAnimeList, getEspecificAnime, getSearchAnime } from './services/list';
+const { Router } = require('express');
+const { getAnimeList, getEspecificAnime, getSearchAnime } = require('./services/list');
 
 const router = Router();  
  
-const favorites: AnimeProps[] = [];
+const favorites = [];
 
 router.get('/', (req, res) => {
     getAnimeList()
@@ -56,4 +56,4 @@ router.get('/anime', (req, res) => {
     
 });
 
-export { router };
+module.exports = { router };
