@@ -5,7 +5,6 @@
     <ul>
         <img src="https://img.shields.io/static/v1?label=Status&message=100%&labelColor=%2306121f&style=flat-square&color=%23004508">
         <img src="https://img.shields.io/static/v1?label=License&message=GNU&labelColor=%2306121f&style=flat-square&color=%23e60000">
-        <img src="https://img.shields.io/github/repo-size/kingnaldoo/AnimeList?&labelColor=%2306121f&style=flat-square&color=%2319a600">
     </ul>
 </div>
 
